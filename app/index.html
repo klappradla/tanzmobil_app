@@ -1,6 +1,7 @@
 <!doctype html>
 <html class="no-js">
   <head>
+    <base href="/">
     <meta charset="utf-8">
     <title></title>
     <meta name="description" content="">
@@ -14,41 +15,27 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-  <body ng-app="tanzmobilAppApp">
+  <body ng-app="tanzmobil">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="header">
-      <div class="navbar navbar-default" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
+    <header>
+      <ul>
+        <li><a ng-href="/#/">Home</a></li>
+        <li><a ng-href="/#interviews">Interviews</a></li>
+        <li><a ng-href="/#about">About</a></li>
+        <li><a ng-href="/#partners">Partners</a></li>
+        <li><a ng-href="/#contact">Contact</a></li>
+      </ul>
+    </header>
 
-            <a class="navbar-brand" href="#/">tanzmobilApp</a>
-          </div>
+    <main ng-view>
+    </main>
 
-          <div class="collapse">
-
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#/">Home</a></li>
-              <li><a ng-href="#/about">About</a></li>
-              <li><a ng-href="#/">Contact</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-    <div ng-view=""></div>
-    </div>
-
-    <div class="footer">
-      <div class="container">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
-      </div>
-    </div>
+    <footer>
+    </footer>
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
@@ -78,6 +65,9 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/page.js"></script>
+        <script src="scripts/controllers/interview.js"></script>
+        <script src="scripts/controllers/post.js"></script>
         <!-- endbuild -->
 </body>
 </html>
