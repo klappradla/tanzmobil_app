@@ -2,14 +2,14 @@
 
 /**
  * @ngdoc overview
- * @name tanzmobilAppApp
+ * @name tanzmobilApp
  * @description
- * # tanzmobilAppApp
+ * # tanzmobilApp
  *
  * Main module of the application.
  */
 angular
-  .module('tanzmobilAppApp', [
+  .module('tanzmobilApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',

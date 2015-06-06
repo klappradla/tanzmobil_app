@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name tanzmobilAppApp.controller:AboutCtrl
+ * @name tanzmobilApp.controller:AboutCtrl
  * @description
  * # AboutCtrl
- * Controller of the tanzmobilAppApp
+ * Controller of the tanzmobilApp
  */
-angular.module('tanzmobilAppApp')
+angular.module('tanzmobilApp')
   .controller('AboutCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',

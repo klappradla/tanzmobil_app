@@ -1,5 +1,5 @@
 {
-  "name": "tanzmobil-app",
+  "name": "tanzmobil",
   "version": "0.0.0",
   "dependencies": {
     "angular": "^1.3.0",
@@ -14,5 +14,5 @@
     "angular-mocks": "^1.3.0"
   },
   "appPath": "app",
-  "moduleName": "tanzmobilAppApp"
+  "moduleName": "tanzmobilApp"
 }

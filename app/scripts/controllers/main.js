@@ -2,20 +2,16 @@
 
 /**
  * @ngdoc function
- * @name tanzmobilAppApp.controller:MainCtrl
+ * @name tanzmobilApp.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of the tanzmobilAppApp
+ * Controller of the tanzmobilApp
  */
-angular.module('tanzmobilAppApp')
-  .controller('MainCtrl', function ($scope, WpService) {
+angular.module('tanzmobilApp')
+  .controller('MainCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
-
-    WpService.post('zwei-eulen').then(function(response) {
-      console.log(response);
-    });
   });
