@@ -2,17 +2,16 @@
 
 /**
  * @ngdoc function
- * @name tanzmobilApp.controller:MainCtrl
+ * @name tanzmobilAppApp.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of the tanzmobilApp
+ * Controller of the tanzmobilAppApp
  */
-angular.module('tanzmobil')
-  .controller('MainCtrl', function ($scope, $http) {
-
-    // get recent posts
-    $http.get('http://localhost:8888/api/get_recent_posts/').success(function(data) {
-      $scope.posts = data.posts;
-    });
-    
+angular.module('tanzmobilAppApp')
+  .controller('MainCtrl', function ($scope) {
+    $scope.awesomeThings = [
+      'HTML5 Boilerplate',
+      'AngularJS',
+      'Karma'
+    ];
   });
