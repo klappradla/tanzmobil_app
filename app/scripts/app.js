@@ -19,7 +19,7 @@ angular
   ])
   .config(function ($routeProvider, $locationProvider) {
 
-    $locationProvider.html5Mode(true);
+    //$locationProvider.html5Mode(true).hashPrefix('!');
 
     $routeProvider
       .when('/', {
@@ -29,6 +29,22 @@ angular
       .when('/about', {
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
+      })
+      .when('/interviews', {
+        templateUrl: 'views/interviews.html',
+        controller: 'InterviewsCtrl'
+      })
+      .when('/interviews/:post', {
+        templateUrl: 'views/post.html',
+        controller: 'PostCtrl'
+      })
+      .when('/contact', {
+        templateUrl: 'views/page.html',
+        controller: 'PageCtrl'
+      })
+      .when('/partners', {
+        templateUrl: 'views/page.html',
+        controller: 'PageCtrl'
       })
       .otherwise({
         redirectTo: '/'
