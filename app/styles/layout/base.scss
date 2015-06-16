@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  font-size: $font-size-main;
+  line-height: $line-hight-main;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+body {
+  font-family: $font-primary;
+  color: $color-font-primary;
+  background-color: #ffffff;
+  background-image: $texture-stoff1;
+}
