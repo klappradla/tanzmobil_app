@@ -8,60 +8,43 @@
 
     .post-title {
       font-weight: 900;
-      font-size: 5em;
-      //margin-bottom: 0.5em;
+      font-size: 5rem;
+      line-height: 5rem;
+      margin-bottom: 0.5em;
     }
 
     .post-description {
       font-weight: 500;
-      font-size: 1.5em;
+      font-size: 1.5rem;
       margin: 0 1em;
     }
 
     .post-meta {
-      font-size: 1em;
       font-weight: 400;
     }
   }
 
-  .post-question {
-    display: block;
+  .question {
+    font-size: 1.5rem;
     font-weight: 700;
-    font-size: 1.15em;
-    margin-bottom: 0.15em;
+    margin-bottom: 0.5em;
+    margin-top: 1.5em;
+  }
+
+  .answer {
+    font-size: 1.25rem;
+    margin-bottom: 0.5em;
   }
 
   .post-content {
     font-family: $font-serif;
 
-    div.column p {
-      strong:first-of-type {
-        @extend .post-question;
-        // question
-      }
+    h2 {
+      @extend .question
+    }
+
+    p {
+      @extend .answer
     }
   }
 }
-
-// .post {
-//   font-family: $font-serif;
-//   margin: auto;
-//   //max-width: 900px;
-//   padding: 3em;
-
-//   .post-description {
-//     text-align: center;
-
-//     .post-title {
-//       font-family
-//       font-weight: 900;
-//       font-size: 4em;
-//       margin-bottom: 0.5em;
-//     }
-
-//     p {
-//       font-style: italic;
-//       font-weight: 400;
-//     }
-//   }
-// }
