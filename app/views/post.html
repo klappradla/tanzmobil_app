@@ -1,7 +1,11 @@
 <article class="post">
 
-  <h2 class="post-title">{{ post.title }}</h2>
-  <p>{{ post.custom_fields.name[0] }}, {{ post.custom_fields.position[0] }}<br>
-  <small>{{ post.custom_fields.place[0] }}, {{ post.custom_fields.date[0] }}</small></p>
-  <div ng-bind-html="post.content"></div>
+  <section class="post-header">
+    <h2 class="post-title">{{ post.title }}</h2>
+    <p class="post-description">{{ post.custom_fields.name[0] }}, {{ post.custom_fields.position[0] }}<p>
+    <p class="post-meta">{{ post.custom_fields.place[0] }} - {{ post.custom_fields.date[0] }}</p>
+  </section>
+
+  <div ng-bind-html="postContent" class="post-content"></div>
+
 </article>

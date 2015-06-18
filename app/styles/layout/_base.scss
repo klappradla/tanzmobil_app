@@ -7,14 +7,14 @@
 html {
   -webkit-font-smoothing: antialiased;
   font-size: $font-size-main;
-  line-height: $line-hight-main;
+  //line-height: $line-hight-main;
   -ms-touch-action: manipulation;
   touch-action: manipulation;
 }
 
 body {
   font-family: $font-main;
-  color: $color-font-primary;
+  color: $color-font-main;
   background-color: #ffffff;
   background-image: $texture-stoff1;
 }

@@ -1,15 +1,20 @@
 // imports
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,700,700italic);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700);
 
 // font
 $font-size-main: 20px;
 $line-hight-main: 28px;
 
 $font-main: 'Roboto', sans-serif;
-$font-secondary: 'Amatic SC', cursive;
+$font-serif: 'Roboto Slab', serif;
+
+$color-font-main: #333333;
+
+
 $font-tertiary: 'Loved by the King', cursive;
 
-$color-font-primary: #615454;
+
 $color-font-secondary: #59453e;
 $color-font-bright: #F6FAFB;
 
