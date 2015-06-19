@@ -15,7 +15,10 @@ angular.module('tanzmobilApp')
       'Karma'
     ];
 
-    WpService.post('zwei-eulen').then(function(response) {
+    // WpService.post('zwei-eulen').then(function(response) {
+    //   console.log(response);
+    // });
+    WpService.postsByCategory('german').then(function(response) {
       console.log(response);
     });
   });

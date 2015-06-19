@@ -41,6 +41,13 @@ angular.module('tanzmobilApp')
         });
     }
 
+    function postsByCategory(slug) {
+      return queryApi('get_category_posts/?slug=' + slug)
+        .then(function(response) {
+          return response.data.posts;
+        });      
+    }
+
     function queryApi(url) {
       return $http
         .get(apiUrl + url)
@@ -53,7 +60,8 @@ angular.module('tanzmobilApp')
       allPosts: allPosts,
       recentPosts: recentPosts,
       page: page,
-      post: post
+      post: post,
+      postsByCategory, postsByCategory
     };
 
   });
