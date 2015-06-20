@@ -12,6 +12,5 @@ angular.module('tanzmobilApp')
 
     WpService.allPosts().then(function(response) {
       $scope.posts = response;
-      console.log($scope.posts);
     });
   });
