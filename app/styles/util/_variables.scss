@@ -12,41 +12,41 @@ $font-serif: 'Roboto Slab', serif;
 $color-font-main: #333333;
 
 
-$font-tertiary: 'Loved by the King', cursive;
+// $font-tertiary: 'Loved by the King', cursive;
 
 
-$color-font-secondary: #59453e;
-$color-font-bright: #F6FAFB;
+// $color-font-secondary: #59453e;
+// $color-font-bright: #F6FAFB;
 
-$color-ambient-mint: #83C7BD;
-$color-ambient-mint-dark: #69a8a7;
-$color-ambient-mint-light: #DBEFEC;
+// $color-ambient-mint: #83C7BD;
+// $color-ambient-mint-dark: #69a8a7;
+// $color-ambient-mint-light: #DBEFEC;
 
-$color-ambient-rosa: #EC776A;
-$color-ambient-rosa-dark: #ba564d;
-
-
-$color-ambient-grey: #9b9b9b;
-$color-ambient-grey-light: lighten($color-ambient-grey, 20);
-
-$color-background-bright: #FCFCFC;
-$color-background-mint: lighten($color-ambient-mint, 25);
-$layout-max-width: 980px;
-
-$boxShadow: 2px 2px 8px 0px rgba(0,0,0,0.32);
-$boxShadow-light: 0px 0px 4px 0px rgba(0,0,0,0.20);
-
-$textShadow-hardWhite: 2px 2px $color-background-bright;
+// $color-ambient-rosa: #EC776A;
+// $color-ambient-rosa-dark: #ba564d;
 
 
-// default color for input, selects, radios
-$form-color-primary: $color-ambient-mint;
-$form-color-secondary: lighten($form-color-primary, 25);
-$form-color-tertiary: darken($form-color-primary, 5);
+// $color-ambient-grey: #9b9b9b;
+// $color-ambient-grey-light: lighten($color-ambient-grey, 20);
+
+// $color-background-bright: #FCFCFC;
+// $color-background-mint: lighten($color-ambient-mint, 25);
+// $layout-max-width: 980px;
+
+// $boxShadow: 2px 2px 8px 0px rgba(0,0,0,0.32);
+// $boxShadow-light: 0px 0px 4px 0px rgba(0,0,0,0.20);
+
+// $textShadow-hardWhite: 2px 2px $color-background-bright;
 
 
-//textures
-$texture-primary: url(image_path('texture-alpha-noise.png'));
-$texture-secondary: url(image_path('concrete-wall.png'));
-$texture-stoff1: url(image_path('texture-alpha-stoff1.png'));
-$texture-stoff2: url(image_path('texture-alpha-stoff2.png'));
+// // default color for input, selects, radios
+// $form-color-primary: $color-ambient-mint;
+// $form-color-secondary: lighten($form-color-primary, 25);
+// $form-color-tertiary: darken($form-color-primary, 5);
+
+
+// //textures
+// $texture-primary: url(image_path('texture-alpha-noise.png'));
+// $texture-secondary: url(image_path('concrete-wall.png'));
+// $texture-stoff1: url(image_path('texture-alpha-stoff1.png'));
+// $texture-stoff2: url(image_path('texture-alpha-stoff2.png'));
