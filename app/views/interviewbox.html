@@ -1,0 +1,14 @@
+
+  <a ng-href="#/interviews/{{ post.slug }}">
+    <div class="interview-wrapper">
+      <img ng-src="{{ post.thumbnail }}"/>
+
+      <div class="interview-info">
+
+        <span ng-repeat="tag in post.tags">{{ tag.slug }}</span>
+
+        <p>{{ post.title }}</p>
+        <p class="post-meta">{{ post.custom_fields.place[0] }} - {{ post.custom_fields.date[0] }}</p>
+      </div>
+    </div>
+  </a>

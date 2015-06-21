@@ -1,13 +1,16 @@
-<h2>interviews</h2>
 <div class="i-g interviews">
   <div ng-repeat="post in posts"  class="i-3 i-mp-4 i-ml-2 i-tp-2 i-tl-1 interview">
     <a ng-href="#/interviews/{{ post.slug }}">
-      <div background-image="{{ post.thumbnail }}">
-        <p>{{ post.title }}</p>
-        <p class="post-meta">{{ post.custom_fields.place[0] }} - {{ post.custom_fields.date[0] }}</p>
-        <ul>
-          <li ng-repeat="tag in post.tags">{{ tag.slug }}</li>
-        </ul>
+      <div class="interview-wrapper">
+        <img ng-src="{{ post.thumbnail }}"/>
+
+        <div class="interview-info">
+
+          <span ng-repeat="tag in post.tags">{{ tag.slug }}</span>
+
+          <p>{{ post.title }}</p>
+          <p class="post-meta">{{ post.custom_fields.place[0] }} - {{ post.custom_fields.date[0] }}</p>
+        </div>
       </div>
     </a>
   </div>

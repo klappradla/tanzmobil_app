@@ -1,21 +1,35 @@
 .interviews {
   .interview {
+    text-align: center;
 
-    
-    //padding: 30px;
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
 
-    div {
+    .interview-wrapper {
       height: 200px;
-      border: 2px solid black;
-      background-color: red;
-      //height: 150px;
-      // img {
-      //   max-width: 100%;
-      //   max-height: 100%;
-      //   margin:auto;
-      //   display:block;
-      //   z-index: 100;
-      // }
+      background-color: rgba(255,0,0,0.5);
+
+      &:hover {
+        background-color: red;
+
+        img {
+          //opacity: 1;
+          display: none;
+
+        }
+      }
+
+      img {
+        filter: grayscale(1);
+        //opacity: 0.2;
+        width: 100%;
+      }
+    }
+
+    .interview-info {
+      padding: 0 0.5em 0.5em;
 
     }
   }
