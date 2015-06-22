@@ -1,10 +1,8 @@
 .interviews {
   .interview {
-    text-align: center;
 
     a {
       text-decoration: none;
-      color: #fff;
     }
 
     figure {
@@ -16,56 +14,76 @@
 
       img {
         filter: grayscale(1);
-        opacity: 0.4;
-        //opacity: 0.2;
-        //min-height: 100%;
+        opacity: 0.3;
+        width: -webkit-calc(100%);
+        width: calc(100%);
         height: 200px;
         object-fit: cover;
-        //object-fit: cover;
       }
 
-      figcaption::before {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: -webkit-linear-gradient(top, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
-        background: linear-gradient(to bottom, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
-        content: '';
-        opacity: 0;
-        -webkit-transform: translate3d(0,50%,0);
-        transform: translate3d(0,50%,0);
-      }
+      figcaption {
+        text-transform: lowercase;
 
-      h2 {
-        position: absolute;
-        top: 70%;
-        left: 0;
-        width: 100%;
-        color: #fff;
-        -webkit-transition: -webkit-transform 0.35s, color 0.35s;
-        transition: transform 0.35s, color 0.35s;
-        -webkit-transform: translate3d(0,-50%,0);
-        transform: translate3d(0,-50%,0);
+        h2 {
+          position: absolute;
+          text-align: center;
+          top: 70%;
+          left: 0;
+          width: 100%;
+          padding: 0 0.25em;
+          color: $color-font-white;
+          font-weight: 300;
+          -webkit-transition: -webkit-transform 0.35s, color 0.35s;
+          transition: transform 0.35s, color 0.35s;
+          -webkit-transform: translate3d(0,-50%,0);
+          transform: translate3d(0,-50%,0);
+        }
       }
 
       p {
         position: absolute;
-        bottom: 0;
-        left: 0;
-        //padding: 2em;
         width: 100%;
         opacity: 0;
+      }
+
+      p.post-meta {
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        color: $color-font-main;
+        font-weight: 200;
         -webkit-transform: translate3d(0,10px,0);
         transform: translate3d(0,10px,0);
+
+        span {
+          &:nth-child(1) {
+            float: left;
+            text-align: left;
+          }
+          &:nth-child(2) {
+            float: right;
+            text-align: right;
+          }
+        }
+      }
+
+      p.post-category {
+        color: rgba(255, 0, 0, 0.498039);
+        top: 0;
+        text-align: right;
+        -webkit-transform: translate3d(0,-20px,0);
+        transform: translate3d(0,-20px,0);
       }
     }
 
-    figure:hover h2 {
-      color: #fff;
-      -webkit-transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
-      transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
+    figure:hover {
+      background-color: #fff;
+
+      h2 {
+        color: #666;
+        -webkit-transform: translate3d(0,-50%,0) translate3d(0,-30px,0);
+        transform: translate3d(0,-50%,0) translate3d(0,-30px,0);
+      }
     }
 
     figure:hover figcaption::before, figure:hover p {
@@ -73,6 +91,12 @@
       -webkit-transform: translate3d(0,0,0);
       transform: translate3d(0,0,0);
     }
+
+    // figure:hover p.post-category {
+    //   opacity: 1;
+    //   -webkit-transform: translate3d(0,-20px,0);
+    //   transform: translate3d(0,-20px,0);
+    // }
 
     .interview-info {
       padding: 0 0.5em 0.5em;
