@@ -50,7 +50,7 @@ angular.module('tanzmobilApp')
 
     function queryApi(url) {
       return $http
-        .get(apiUrl + url)
+        .get(apiUrl + url, { cache: true })
         .then(function(response) {
           return response;
         });
