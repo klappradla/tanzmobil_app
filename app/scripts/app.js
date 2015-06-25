@@ -32,7 +32,8 @@ angular
       })
       .when('/interviews', {
         templateUrl: 'views/interviews.html',
-        controller: 'InterviewsCtrl'
+        controller: 'InterviewsCtrl',
+        controllerAs: 'interviews'
       })
       .when('/interviews/:post', {
         templateUrl: 'views/post.html',
