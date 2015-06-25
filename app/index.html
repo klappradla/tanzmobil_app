@@ -23,26 +23,14 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="header">
-      <div class="navbar navbar-default" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
-
-            <a class="navbar-brand" href="#/">tanzmobil</a>
-          </div>
-
-          <div class="collapse">
-
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="/#/">Home</a></li>
-              <li><a ng-href="/#about">About</a></li>
-              <li><a ng-href="/#interviews">Interviews</a></li>
-              <li><a ng-href="/#contact/">Contact</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
+    <header class="i-container" >
+      <nav ng-controller="NavCtrl as nav">
+        <a ng-class="{ active: nav.isActive('/') }" ng-href="/#/">Home</a>
+        <a ng-class="{ active: nav.isActive('/interviews') }" ng-href="/#interviews">Interviews</a>
+        <a ng-class="{ active: nav.isActive('/about')}" ng-href="/#about">About</a>
+        <a ng-class="{ active: nav.isActive('/contact')}" ng-href="/#contact/">Contact</a>
+      </nav>
+    </header>
 
     <main class="i-container" ng-view="">
     </main>
@@ -87,6 +75,7 @@
         <script src="scripts/services/categorycolor.js"></script>
         <script src="scripts/directives/backgroundcolor.js"></script>
         <script src="scripts/directives/fontcolor.js"></script>
+        <script src="scripts/controllers/nav.js"></script>
         <!-- endbuild -->
 </body>
 </html>
