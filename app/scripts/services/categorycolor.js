@@ -9,7 +9,7 @@
  */
 angular.module('tanzmobilApp')
   .service('categoryColor', function () {
-    function getColorAlpha(category, alpha) {
+    function getColor(category, alpha) {
       alpha = alpha || false;
       switch(category) {
         case 'german':
@@ -32,19 +32,6 @@ angular.module('tanzmobilApp')
             return 'rgba(107,107,107,0.5)';
           }
           return '#6B6B6B';
-      }
-    }
-
-    function getColor(category) {
-      switch(category) {
-        case 'german':
-          return 'rgba(237,85,101,0.5)';
-        case 'english':
-          return 'rgba(252,110,81,0.5)';
-        case 'french':
-          return 'rgba(172,146,236,0.5)';
-        default:
-          return 'rgba(107,107,107,0.5)';
       }
     }
 

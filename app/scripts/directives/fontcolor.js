@@ -10,7 +10,7 @@ angular.module('tanzmobilApp')
   .directive('fontColor', function (categoryColor) {
     return function (scope, element, attrs) {
       element.css({
-        'color': categoryColor.getColor(attrs.fontColor)
+        'color': categoryColor.getColor(attrs.fontColor, true)
         });
     };
   });
