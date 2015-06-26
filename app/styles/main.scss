@@ -5,9 +5,13 @@
 
 // layout
 @import 'layout/base';
-@import 'layout/nav';
 @import 'layout/post';
 @import 'layout/interviews';
+@import 'layout/home';
+
+// components
+@import 'components/progressbar';
+@import 'components/header';
 
 // vendor
 //@import 'vendor/icecream-grid.css'

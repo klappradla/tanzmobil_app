@@ -23,7 +23,9 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
+    <progress-bar ng-show="{{ reading }}"></progress-bar>
     <header class="i-container" >
+        <object id="car" type="image/svg+xml" data="images/car.svg">Your browser does not support SVG</object>
       <nav ng-controller="NavCtrl as nav">
         <a ng-class="{ active: nav.isActive('/') }" ng-href="/#/">Home</a>
         <a ng-class="{ active: nav.isActive('/interviews') }" ng-href="/#interviews">Interviews</a>
@@ -76,6 +78,7 @@
         <script src="scripts/directives/backgroundcolor.js"></script>
         <script src="scripts/directives/fontcolor.js"></script>
         <script src="scripts/controllers/nav.js"></script>
+        <script src="scripts/directives/progressbar.js"></script>
         <!-- endbuild -->
 </body>
 </html>

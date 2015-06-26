@@ -13,4 +13,12 @@ angular.module('tanzmobilApp')
       $scope.post = response;
       $scope.postContent = $sce.trustAsHtml($scope.post.content);
     });
+
+    // function reading() {
+    //   return true;
+    // };
+
+    // return {
+    //   reading: reading
+    // }
   });
